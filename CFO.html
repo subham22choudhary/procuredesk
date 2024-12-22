@@ -591,6 +591,117 @@
             padding: 30px 35px 0;
         }
 
+        .fourth-section .blok-0 .col-md-6.col-12,
+        .fourth-section .blok-1 .col-md-6.col-12 {
+            padding: 0;
+        }
+
+        .text-center.bck-1 {
+            margin-bottom: 50px;
+        }
+
+        .solution-tick {
+            margin-top: 24px;
+        }
+
+        .solution-tick p {
+            position: relative;
+            margin-left: 31px;
+        }
+
+        .solution-tick p:before {
+            content: "";
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-image: url(./img/solution-cfos-img-3.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: -31px;
+        }
+
+        .svblk-2 h3 {
+            margin-bottom: 12px;
+            margin-top: 32px;
+        }
+
+        .svblk-2 h3 span {
+            margin-right: 8px;
+        }
+
+        .svblk-2 p {
+            min-height: 3rem;
+        }
+
+        .badge-item>div {
+            background: #f4f7ff !important;
+            height: auto !important;
+        }
+
+        .img-badge {
+            max-width: 120px;
+            height: 93px;
+        }
+
+
+        .badge-item>.testidiv-child>div:first-child {
+            margin-bottom: 40px;
+        }
+
+        .testimonialreview .testidiv-child {
+            padding: 29px 24px;
+            min-height: 25rem;
+        }
+
+        .badge-item>.testidiv-child>div>h3 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 32px;
+            width: 223px;
+        }
+
+        p.badge-count {
+            margin-bottom: 0px;
+        }
+
+        .testipara p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            width: 253.33px;
+        }
+
+        .ready-head {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .contactus-built-team-div>p.text-center.mx-auto {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 152%;
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .contactus-built-team-div>div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+        }
+
+        .contactus-built-team-div>div a {
+            text-decoration: unset;
+        }
+
         /* Mobile */
         @media only screen and (min-width: 1744px) {
             .col-md-4.col-12.third-blok {
@@ -604,13 +715,41 @@
 
         @media only screen and (max-width: 768px) {
 
+            .seventh-section p.mb-0,
+            .badge-item>.testidiv-child>div>h3,
+            .testipara p,
+            .blok-content p:nth-of-type(1),
+            p.hrp,
+            .webpg-hrosec h1,
             .text-center.blk-1 p:nth-of-type(2),
             .fourth-section .bck-1 p:nth-of-type(2),
             .seventh-section .blok-3 .col-md-6 .blok-2 h3,
             .svblk-1 h3,
             .col-md-4.col-12.third-blok p,
             .fourth-section .row:nth-of-type(2) .col-md-4 p {
-                width: auto;
+                width: auto !important;
+            }
+
+            .contactus-built-team-div>p.text-center.mx-auto {
+                margin-bottom: revert-layer;
+            }
+
+            .badge-item>div {
+                text-align: center;
+            }
+
+            .list-unstyled {
+                justify-content: center;
+            }
+
+
+            .contactus-built-team-div>div {
+                gap: 1rem;
+                flex-direction: column;
+            }
+
+            .testidiv-child {
+                min-height: unset;
             }
 
             .header-spl {
@@ -824,36 +963,6 @@
         </div>
     </div>
 
-    <style>
-        .fourth-section .blok-0 .col-md-6.col-12,
-        .fourth-section .blok-1 .col-md-6.col-12 {
-            padding: 0;
-        }
-
-        .text-center.bck-1 {
-            margin-bottom: 50px;
-        }
-
-        .solution-tick {
-            margin-top: 24px;
-        }
-
-        .solution-tick p {
-            position: relative;
-            margin-left: 31px;
-        }
-
-        .solution-tick p:before {
-            content: "";
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            background-image: url(./img/solution-cfos-img-3.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            left: -31px;
-        }
-    </style>
     <!-- Fourth Section -->
     <div class="fourth-section p100">
 
@@ -951,7 +1060,6 @@
 
     </div>
 
-
     <div class="col-lg-12 text-center background1 p100">
         <div class="container">
             <div class="contactus-built-team-div ">
@@ -972,22 +1080,6 @@
             </div>
         </div>
     </div>
-
-
-    <style>
-        .svblk-2 h3 {
-            margin-bottom: 12px;
-            margin-top: 32px;
-        }
-
-        .svblk-2 h3 span {
-            margin-right: 8px;
-        }
-
-        .svblk-2 p {
-            min-height: 3rem;
-        }
-    </style>
 
     <!-- Seventh Section -->
     <div class="seventh-section">
@@ -1054,8 +1146,6 @@
         </div>
     </div>
 
-
-
     <style>
         .badge-item>div {
             background: #f4f7ff !important;
@@ -1067,115 +1157,94 @@
             height: 93px;
         }
 
-
-        .badge-item>.testidiv-child>div:first-child {
-            margin-bottom: 40px;
+        .badge-heading {
+            font-size: 1.375rem;
         }
 
-        .testidiv-child {
-            padding: 29px 24px;
-            min-height: 25rem;
+        .badge-count {
+            color: #454655;
+            margin-top: 6px;
         }
 
-        .badge-item>.testidiv-child>div>h3 {
-            font-style: normal;
-            font-weight: 700;
-            font-size: 22px;
-            line-height: 32px;
-            width: 223px;
-        }
-
-        p.badge-count {
-            margin-bottom: 0px;
+        .badge-container {
+            max-width: 925px;
+            margin: 0 auto;
         }
     </style>
 
-    <div class="testimonial background1 p100 nitro-offscreen">
+    <div class="testimonial background1 p100">
         <div class="built-team-div mx-auto text-center">
-            <h2 id="7" class="header-tag text-center ">Why Customer choose<br> ProcureDesk</h2>
+            <h2 id="7" class="header-tag text-center ">Why Customer choose<br>
+                ProcureDesk</h2>
         </div>
         <div class="container mt-2 ">
             <div class="row badge-container">
                 <div class="col-md-4 col-12">
                     <div class="testidiv my-3 badge-item">
-                        <div class="testidiv-child">
+                        <div class="testidiv-child" style="height: 339.935px;">
                             <div class="text-center"><a
                                     href="https://www.getapp.com/operations-management-software/a/procuredesk/"
-                                    target="_blank" rel="noopener"><br> <img
-                                        nitro-lazy-src="https://www.procuredesk.com/wp-content/uploads/2024/12/solution-cfos-img-6.png"
-                                        class="img-badge lazyloaded" decoding="async" nitro-lazy-empty=""
-                                        id="OTcwOjEyNw==-1"
+                                    target="_blank" rel="noopener"><br>
+                                    <img decoding="async" class="img-badge"
                                         src="https://www.procuredesk.com/wp-content/uploads/2024/12/solution-cfos-img-6.png"><br>
                                 </a></div>
                             <div class="testipara mt-3">
                                 <h3 class="badge-heading">Best Functionality &amp; Features 2024</h3>
                             </div>
                             <ul class=" list-unstyled pl-0 d-flex align-items-center m-0">
-                                <li><img nitro-lazy-src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/source/rev-16fef75/www.procuredesk.com/wp-content/uploads/2024/12/4plus-star-rating.svg"
-                                        class="lazyloaded" decoding="async" nitro-lazy-empty="" id="OTc2OjExMQ==-1"
-                                        src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/source/rev-16fef75/www.procuredesk.com/wp-content/uploads/2024/12/4plus-star-rating.svg">
+                                <li><img decoding="async"
+                                        src="https://www.procuredesk.com/wp-content/uploads/2024/12/4plus-star-rating.svg">
                                 </li>
                             </ul>
-                            <p class="badge-count">30+ Reviews <img alt="arrow icon"
-                                    nitro-lazy-src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/source/rev-16fef75/www.procuredesk.com/wp-content/uploads/2024/12/arrow-icon-black-2.svg"
-                                    class="lazyloaded" decoding="async" nitro-lazy-empty="" id="OTc4OjE2MA==-1"
-                                    src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/source/rev-16fef75/www.procuredesk.com/wp-content/uploads/2024/12/arrow-icon-black-2.svg">
-                            </p>
+                            <p class="badge-count">30+ Reviews <img decoding="async"
+                                    src="https://www.procuredesk.com/wp-content/uploads/2024/12/arrow-icon-black-2.svg"
+                                    alt="arrow icon"></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12">
                     <div class="testidiv my-3 badge-item">
-                        <div class="testidiv-child">
+                        <div class="testidiv-child" style="height: 339.935px;">
                             <div class="text-center"><a
                                     href="https://www.getapp.com/operations-management-software/a/procuredesk/"
-                                    target="_blank" rel="noopener"><br> <img alt="Captera badge"
-                                        nitro-lazy-src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/optimized/rev-16fef75/www.procuredesk.com/wp-content/uploads/2024/12/Most-Recommended-badge.png"
-                                        class="img-badge lazyloaded" decoding="async" nitro-lazy-empty=""
-                                        id="OTg2OjE1MA==-1"
-                                        src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/optimized/rev-16fef75/www.procuredesk.com/wp-content/uploads/2024/12/Most-Recommended-badge.png"><br>
+                                    target="_blank" rel="noopener"><br>
+                                    <img decoding="async" class="img-badge"
+                                        src="https://www.procuredesk.com/wp-content/uploads/2024/12/Most-Recommended-badge.png"
+                                        alt="Captera badge"><br>
                                 </a></div>
                             <div class="testipara mt-3 ">
                                 <h3 class="badge-heading">Most Recommended 2024</h3>
                             </div>
                             <ul class=" list-unstyled pl-0 d-flex align-items-center m-0">
-                                <li><img nitro-lazy-src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/source/rev-16fef75/www.procuredesk.com/wp-content/uploads/2024/12/4plus-star-rating.svg"
-                                        class="lazyloaded" decoding="async" nitro-lazy-empty="" id="OTkyOjExMQ==-1"
-                                        src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/source/rev-16fef75/www.procuredesk.com/wp-content/uploads/2024/12/4plus-star-rating.svg">
+                                <li><img decoding="async"
+                                        src="https://www.procuredesk.com/wp-content/uploads/2024/12/4plus-star-rating.svg">
                                 </li>
                             </ul>
-                            <p class="badge-count">30+ Reviews <img alt="arrow icon"
-                                    nitro-lazy-src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/source/rev-16fef75/www.procuredesk.com/wp-content/uploads/2024/12/arrow-icon-black-2.svg"
-                                    class="lazyloaded" decoding="async" nitro-lazy-empty="" id="OTk0OjE2MA==-1"
-                                    src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/source/rev-16fef75/www.procuredesk.com/wp-content/uploads/2024/12/arrow-icon-black-2.svg">
-                            </p>
+                            <p class="badge-count">30+ Reviews <img decoding="async"
+                                    src="https://www.procuredesk.com/wp-content/uploads/2024/12/arrow-icon-black-2.svg"
+                                    alt="arrow icon"></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12">
                     <div class="testidiv my-3 badge-item">
-                        <div class="testidiv-child">
+                        <div class="testidiv-child" style="height: 339.935px;">
                             <div class="text-center"><a href="https://www.capterra.com/p/175845/Procuredesk/"
-                                    target="_blank" rel="noopener"><br> <img alt="Capterra Badge"
-                                        nitro-lazy-src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/optimized/rev-16fef75/brand-assets.capterra.com/badge/f9ca0625-15e6-4dfb-9e73-0600e62e963c.png"
-                                        class="img-badge lazyloaded" decoding="async" nitro-lazy-empty=""
-                                        id="MTAwMjoxNTA=-1"
-                                        src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/optimized/rev-16fef75/brand-assets.capterra.com/badge/f9ca0625-15e6-4dfb-9e73-0600e62e963c.png">
-                                </a></div>
+                                    target="_blank" rel="noopener"><br>
+                                    <img decoding="async" class="img-badge"
+                                        src="https://brand-assets.capterra.com/badge/f9ca0625-15e6-4dfb-9e73-0600e62e963c.png"
+                                        alt="Capterra Badge"> </a></div>
                             <div class="testipara mt-3 ">
                                 <h3 class="badge-heading">Best Ease of use 2024</h3>
                             </div>
                             <ul class=" list-unstyled pl-0 d-flex align-items-center m-0">
-                                <li><img nitro-lazy-src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/source/rev-16fef75/www.procuredesk.com/wp-content/uploads/2024/12/4plus-star-rating.svg"
-                                        class="lazyloaded" decoding="async" nitro-lazy-empty="" id="MTAwNzoxMTE=-1"
-                                        src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/source/rev-16fef75/www.procuredesk.com/wp-content/uploads/2024/12/4plus-star-rating.svg">
+                                <li><img decoding="async"
+                                        src="https://www.procuredesk.com/wp-content/uploads/2024/12/4plus-star-rating.svg">
                                 </li>
                             </ul>
-                            <p class="badge-count">30+ Reviews <img alt="arrow icon"
-                                    nitro-lazy-src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/source/rev-16fef75/www.procuredesk.com/wp-content/uploads/2024/12/arrow-icon-black-2.svg"
-                                    class="lazyloaded" decoding="async" nitro-lazy-empty="" id="MTAwOToxNjA=-1"
-                                    src="https://cdn-ifgjf.nitrocdn.com/DCbROeehyZUHOBQWzjvCJNZTDXGStZHz/assets/images/source/rev-16fef75/www.procuredesk.com/wp-content/uploads/2024/12/arrow-icon-black-2.svg">
-                            </p>
+                            <p class="badge-count">30+ Reviews <img decoding="async"
+                                    src="https://www.procuredesk.com/wp-content/uploads/2024/12/arrow-icon-black-2.svg"
+                                    alt="arrow icon"></p>
                         </div>
                     </div>
                 </div>
@@ -1183,18 +1252,7 @@
         </div>
     </div>
 
-
-    <style>
-        .testipara p {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 30px;
-            width: 253.33px;
-        }
-    </style>
-
-    <div class="testimonial m100 nitro-offscreen">
+    <div class="testimonialreview testimonial m100 nitro-offscreen">
         <div class="built-team-div mx-auto text-center"><span class="stps text-uppercase"> LOVED BY 300+ COMPANIES
             </span>
             <p></p>
@@ -1337,45 +1395,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-    <style>
-        .ready-head {
-            font-style: normal;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 120%;
-            margin-bottom: 12px;
-            position: relative;
-        }
-
-        .contactus-built-team-div>p.text-center.mx-auto {
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 152%;
-            text-align: center;
-            margin-bottom: 56px;
-        }
-
-        .contactus-built-team-div>div {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 3rem;
-        }
-
-        .contactus-built-team-div>div a {
-            text-decoration: unset;
-        }
-    </style>
-
-
-
 
     <!-- Tenth Section -->
     <div class="col-lg-12 text-center background-gred contactus_banner_sec">
